@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Noto+Serif&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/list-question.css">
+  <!-- <link rel="stylesheet" href="CSS/navigatin.css"> -->
+
+</head>
+
+<body>
+  <section class="question-dashbord">
+    <!-- header Section -->
+    <header class="header">
+      <section class="navigation-container">
+        <nav class="nav-bar">
+          <img src="img/codemarker4.png" alt="" class="nav-logo-image">
+
+
+          <span class="dropdown">
+            <button class="dropbtn">Dashboard</button>
+
+            </div>
+          </span>
+
+          <span class="dropdown">
+            <button class="dropbtn">Test Management</button>
+            <div class="dropdown-content">
+              <div><a href="create-technology.html" class="create-technology-button">Create Technology</a></div>
+              <div><a href="" class="list-technology-button">List Technology</a></div>
+              <div><a href="create-test.html" class="create-test-button">Create Test</a></div>
+              <div><a href="" class="list-test-button">List Test</a></div>
+
+            </div>
+          </span>
+          <span class="dropdown">
+            <button class="dropbtn">User Management</button>
+            <div class="dropdown-content">
+              <div>Create User</div>
+              <div>List User</div>
+              <div>Update User</div>
+            </div>
+          </span>
+
+          <span class="dropdown">
+            <button class="dropbtn">Reports</button>
+            <div class="dropdown-content">
+              <div>Create Report</div>
+              <div>Update Reports</div>
+              <div>Reports List</div>
+            </div>
+          </span>
+
+          <img src="img/customers/customer-4.jpg" alt="" class="user-image" onclick="toggleMenu()" />
+          <div class="user-menu-wrap" id="subMenu">
+            <div class="user-sub-menu">
+              <div class="user-info">
+                <img src="img/customers/customer-3.jpg" alt="" />
+                <h3>Jhon Paterik</h3>
+              </div>
+              <hr />
+
+              <a href="#" class="sub-menu-link">
+                <img src="img/logos/profile.png" alt="" />
+                <p>Edit Profile</p>
+                <span></span>
+              </a>
+              <a href="#" class="sub-menu-link">
+                <img src="img/logos/setting.png" alt="" />
+                <p>Settings</p>
+                <span></span>
+              </a>
+              <a href="#" class="sub-menu-link">
+                <img src="img/logos/logout.png" alt="" />
+                <p>Logout</p>
+                <span></span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <script>
+      let subMenu = document.getElementById("subMenu");
+
+      function toggleMenu() {
+        subMenu.classList.toggle("open-menu");
+      }
+    </script>
+
+    <main class="container">
+      <div class="btn-container">
+        <a href="#" class="btn upload">Create Question</a>
+        <a href="#" class="btn upload">Bulk upload</a>
+
+        <div class="dropdown">
+          <button class="dropbtn Level btn">Level</button>
+          <div class="dropdown-content">
+            <a href="#">Easy</a>
+            <a href="#">Medium</a>
+            <a href="#">Advance</a>
+          </div>
+        </div>
+
+        <!-- <span class="dropdown "> -->
+        <!-- <button class=" dropbtn " ><h6 class="level">Level</h6> </button>
+          <div class="dropdown-content">
+            <div>Easy</div>
+            <div>Medium</div>
+            <div>Advance</div>
+          </div> -->
+        <!-- </span> -->
+
+
+      </div>
+      <div class="link-section">
+        <a href="#" class="all-link">Select All </a>
+        <a href="#" class="all-link ">Clear All</a>
+      </div>
+
+      <!-- Quizz-Question container -->
+      <section class="Quizz container">
+
+
+        <!-- <h2 class="question-heading"> HTML Question </h2> -->
+        <section class="questions-container">
+          <section class="que-container">
+            <div class="que-section">
+              <p class="question">
+                <input type="checkbox" value="Question" name="Quizz-Que" class="Quizz-Que"><span> 1:</span>
+                What does the abbreviation HTML stand for?
+              </p>
+              <p class="que-link">
+                <a href="#" class="que-link fa fa-edit"> &#160; || </a>
+                <a href="#" class="que-link "> <i class="fa">&#xf014; &#160;</i></a>
+              </p>
+            </div>
+            <div class="ans-option-container ">
+              <p> <input type="radio" value="options" name="que" class="option">Hypertext markup LAnguage</p>
+              <p> <input type="radio" value="options" name="que" class="option">high text markup language</p>
+              <p> <input type="radio" value="options" name="que" class="option">hypertext markdown language</p>
+              <p> <input type="radio" value="options" name="que" class="option">none of above</p>
+            </div>
+          </section>
+          <section class="que-container">
+            <div class="que-section">
+              <p class="question">
+                <input type="checkbox" value="Question" name="Quizz-Que" class="Quizz-Que"><span> 2:</span>
+                How many headers in HTML by default
+              </p>
+              <p class="que-link">
+
+                <a href="#" class="que-link fa fa-edit"> &#160; || </a>
+
+                <a href="#" class="que-link "> <i class="fa">&#xf014;</i></a>
+              </p>
+            </div>
+            <div class="ans-option-container ">
+              <p> <input type="radio" value="options" name="que" class="option">5</p>
+              <p> <input type="radio" value="options" name="que" class="option">1</p>
+              <p> <input type="radio" value="options" name="que" class="option">3</p>
+              <p> <input type="radio" value="options" name="que" class="option">6</p>
+            </div>
+          </section>
+
+
+          <section class="que-container">
+            <div class="que-section">
+              <p class="question">
+                <input type="checkbox" value="Question" name="Quizz-Que" class="Quizz-Que"> <span>3 :</span>
+                What is the smallest header in HTML by default?
+              </p>
+              <p class="que-link">
+
+                <a href="#" class="que-link fa fa-edit"> &#160; || </a>
+
+                <a href="#" class="que-link "> <i class="fa">&#xf014;</i></a>
+              </p>
+            </div>
+            <div class="ans-option-container ">
+              <p> <input type="radio" value="options" name="que" class="option">p</p>
+              <p> <input type="radio" value="options" name="que" class="option">h2</p>
+              <p> <input type="radio" value="options" name="que" class="option">h3</p>
+              <p> <input type="radio" value="options" name="que" class="option">h4</p>
+            </div>
+          </section>
+          <section class="que-container">
+            <div class="que-section">
+              <p class="question">
+                <input type="checkbox" value="Question" name="Quizz-Que" class="Quizz-Que"> <span>4 :</span>
+                What are the types of lists available in HTML?
+              </p>
+              <p class="que-link">
+
+                <a href="#" class="que-link fa fa-edit"> &#160; || </a>
+
+                <a href="#" class="que-link "> <i class="fa">&#xf014;</i></a>
+              </p>
+            </div>
+            <div class="ans-option-container ">
+              <p> <input type="radio" value="options" name="que" class="option">orderd,uncorderd list</p>
+              <p> <input type="radio" value="options" name="que" class="option">Bulleted Numbered list</p>
+              <p> <input type="radio" value="options" name="que" class="option">Named,unnumberd list</p>
+              <p> <input type="radio" value="options" name="que" class="option">none of above</p>
+            </div>
+          </section>
+          <section class="que-container">
+            <div class="que-section">
+              <p class="question">
+                <input type="checkbox" value="Question" name="Quizz-Que" class="Quizz-Que"> <span>5 :</span>
+                How to create an ordered list in HTML?
+              </p>
+              <p class="que-link">
+
+                <a href="#" class="que-link fa fa-edit"> &#160; || </a>
+
+                <a href="#" class="que-link "> <i class="fa">&#xf014;</i></a>
+              </p>
+            </div>
+            <div class="ans-option-container ">
+              <p> <input type="radio" value="options" name="que" class="option">option-1</p>
+              <p> <input type="radio" value="options" name="que" class="option">option-2</p>
+              <p> <input type="radio" value="options" name="que" class="option">option-3</p>
+              <p> <input type="radio" value="options" name="que" class="option">option-4</p>
+            </div>
+          </section>
+          <section class="que-container">
+            <div class="que-section">
+              <p class="question">
+                <input type="checkbox" value="Question" name="Quizz-Que" class="Quizz-Que"> <span>6 :</span>
+                HTML files are saved by default with the extension?
+              </p>
+              <p class="que-link">
+
+                <a href="#" class="que-link fa fa-edit"> &#160; || </a>
+
+                <a href="#" class="que-link "> <i class="fa">&#xf014;</i></a>
+              </p>
+            </div>
+            <div class="ans-option-container ">
+              <p> <input type="radio" value="options" name="que" class="option">.html</p>
+              <p> <input type="radio" value="options" name="que" class="option">.h</p>
+              <p> <input type="radio" value="options" name="que" class="option">.ht</p>
+              <p> <input type="radio" value="options" name="que" class="option">none of above</p>
+            </div>
+          </section>
+          <section class="que-container">
+            <div class="que-section">
+              <p class="question">
+                <input type="checkbox" value="Question" name="Quizz-Que" class="Quizz-Que"> <span>7 :</span>
+                We enclose HTML tags within?
+              </p>
+              <p class="que-link">
+
+                <a href="#" class="que-link fa fa-edit"> &#160; || </a>
+
+                <a href="#" class="que-link "> <i class="fa">&#xf014;</i></a>
+              </p>
+            </div>
+            <div class="ans-option-container ">
+              <p> <input type="radio" value="options" name="que" class="option">{}</p>
+              <p> <input type="radio" value="options" name="que" class="option">[]</p>
+              <p> <input type="radio" value="options" name="que" class="option">! !</p>
+              <p> <input type="radio" value="options" name="que" class="option">none of above</p>
+            </div>
+          </section>
+          <section class="que-container">
+            <div class="que-section">
+              <p class="question">
+                <input type="checkbox" value="Question" name="Quizz-Que" class="Quizz-Que"> <span> 8 :</span>
+                What is the effect of the tag?r
+              </p>
+              <p class="que-link">
+
+                <a href="#" class="que-link fa fa-edit"> &#160; || </a>
+
+                <a href="#" class="que-link "> <i class="fa">&#xf014;</i></a>
+              </p>
+            </div>
+            <div class="ans-option-container ">
+              <p> <input type="radio" value="options" name="que" class="option">It converts the text within it to bold
+                font.</p>
+              <p> <input type="radio" value="options" name="que" class="option">It is used to write black-colored font.
+              </p>
+              <p> <input type="radio" value="options" name="que" class="option">It is used to change the font size.</p>
+              <p> <input type="radio" value="options" name="que" class="option">None of the above.</p>
+            </div>
+          </section>
+          <section class="que-container">
+            <div class="que-section">
+              <p class="question">
+                <input type="checkbox" value="Question" name="Quizz-Que" class="Quizz-Que"> <span>9 :</span>
+                Which of the following is correct about HTML?
+              </p>
+              <p class="que-link">
+
+                <a href="#" class="que-link fa fa-edit"> &#160; || </a>
+
+                <a href="#" class="que-link "> <i class="fa">&#xf014;</i></a>
+              </p>
+            </div>
+            <div class="ans-option-container ">
+              <p> <input type="radio" value="options" name="que" class="option">HTML uses User Defined Tags.</p>
+              <p> <input type="radio" value="options" name="que" class="option">HTML uses tags defined within the
+                language.</p>
+              <p> <input type="radio" value="options" name="que" class="option">Both A and B.</p>
+              <p> <input type="radio" value="options" name="que" class="option">None of the above.</p>
+            </div>
+          </section>
+          <section class="que-container">
+            <div class="que-section">
+              <p class="question">
+                <input type="checkbox" value="Question" name="Quizz-Que" class="Quizz-Que"> <span>10 :</span>
+                How to display preformatted text in HTML?
+              </p>
+              <p class="que-link">
+                <a href="#" class="que-link fa fa-edit"> &#160; || </a>
+
+                <a href="#" class="que-link "> <i class="fa">&#xf014;</i></a>
+              </p>
+            </div>
+            <div class="ans-option-container ">
+              <p> <input type="radio" value="options" name="que" class="option">option-1</p>
+              <p> <input type="radio" value="options" name="que" class="option">option-2</p>
+              <p> <input type="radio" value="options" name="que" class="option">option-3</p>
+              <p> <input type="radio" value="options" name="que" class="option">option-4</p>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+</body>
+
+</html>

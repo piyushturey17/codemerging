@@ -1,0 +1,123 @@
+/******   REGISTRATION SECTION    ******/
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.registration-box {
+  display: grid;
+  grid-template-columns: 40fr 40fr;
+  background-color: white;
+}
+
+/* .registration-img-box {
+  padding: 1.2rem;
+} */
+
+.registration-img {
+  width: 100%;
+  height: 580px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  border-radius: 0;
+}
+
+.registration-form-box {
+  font-family: "DM Sans", sans-serif;
+  height: 70%;
+  /* margin: 2rem; */
+  /* padding: 0; */
+  display: grid;
+  place-items: center;
+  margin-top: 5rem;
+}
+
+.registration-logo {
+  height: 5.6rem;
+  margin-bottom: 1rem;
+}
+.registration-logo-hero {
+  position: fixed;
+  /* margin-top: 5rem; */
+  margin-left: 10rem;
+  margin-bottom: 20rem;
+  margin-top: 3rem;
+}
+
+.registration-form-heading {
+  font-family: "Noto Serif", serif;
+  margin-bottom: 0;
+  font-size: 1.9rem;
+}
+
+.register-instruction {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #5e5959;
+}
+
+.register-form {
+  display: grid;
+  height: 70%;
+  margin-top: 0;
+  gap: 10px;
+  /* padding: 20px; */
+  background-color: #ffffff;
+  /* border: 1px solid #ccc; */
+  border-radius: 10px;
+  width: 80%;
+  max-width: 100%;
+}
+
+.form-input {
+  font-family: "DM Sans", sans-serif;
+  display: grid;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.form-input input {
+  font-family: "DM Sans", sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1a73e8;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.signin-link {
+  font-family: "Noto Serif", serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  font-family: "Noto Serif", serif;
+  font-size: 0.8rem;
+}
+
+input.remember-check-box {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+.signin-button {
+  text-decoration: none;
+  color: #4797c5;
+}
+
+.signin-button:hover {
+  color: #27668b;
+}

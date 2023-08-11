@@ -1,0 +1,234 @@
+body {
+  font-family: "DM Sans", sans-serif;
+  background-image: url("../img/form-background.png");
+}
+.login-container {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+}
+
+.login-image {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 43.2rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.start {
+  cursor: pointer;
+  position: fixed;
+  top: 41rem;
+  left: 17rem;
+  font-weight: 600;
+  width: 15rem;
+  height: 2rem;
+  border: 1px solid rgb(217, 77, 77);
+
+  border-radius: 0.5rem;
+}
+
+.start:hover {
+  background-color: rgb(209, 76, 76);
+  color: #fff;
+}
+
+.logo-img {
+  margin-left: 21%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-content-box {
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5rem;
+}
+
+.login-content {
+  /* box-shadow: 0 2.4rem 4.8rem rgba(14, 1, 1, 0.075); */
+  width: 80%;
+  height: 80%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  /* width: 70%; */
+  /* align-items: center; */
+  position: relative;
+  /* top: 10%; */
+  /* left: 40%; */
+}
+
+.logo-img {
+  width: 50%;
+}
+.login-container {
+  width: 95%;
+}
+/* .login-image-box {
+  width: 80%;
+} */
+
+/* label {
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+} */
+
+.label-user {
+  color: #6a6262;
+}
+
+.label-pass {
+  color: #6a6262;
+}
+
+.login-here {
+  text-transform: uppercase;
+  margin-top: 20%;
+  margin-left: 35%;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  color: #504a4a;
+  font-family: "Noto Serif", serif;
+}
+
+/* input {
+  display: block;
+  height: 1.5rem;
+  width: 80%;
+  background-color: rgba(41, 166, 192, 0.07);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 300;
+} */
+
+.input-user {
+  display: block;
+  height: 3.2rem;
+  width: 90%;
+  background-color: rgba(41, 166, 192, 0.07);
+  border: none;
+  border-radius: 3px;
+  border-color: none;
+  padding: 0 10px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.input-pass {
+  display: block;
+  height: 3.2rem;
+  width: 90%;
+  background-color: rgba(41, 166, 192, 0.07);
+  border: none;
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+::placeholder {
+  color: #9b8686;
+}
+
+.password-instruction {
+  color: #9b8686;
+  font-size: 0.9rem;
+}
+
+.forgotpassword {
+  width: 80%;
+  display: flex;
+  justify-content: end;
+  /* border: 2px solid red; */
+  align-items: end;
+  font-size: 0.9rem;
+  margin-left: 4.7rem;
+  margin-bottom: 2.2rem;
+  text-transform: none;
+  color: #6a6262;
+}
+
+.forgotpassword:hover {
+  color: #4797c5;
+  /* transition-duration: 0ms; */
+}
+
+.btn-container-register {
+  /* border: 2px solid black; */
+  display: flex;
+  /* align-items: center; */
+
+  /* align-items: center; */
+
+  margin-bottom: 1.5rem;
+}
+
+.register-instruction {
+  margin-right: 1rem;
+  color: #9b8686;
+  font-size: 1rem;
+}
+
+.register-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.8rem;
+  width: 5.2rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #4cb39ed3;
+  padding-left: 0;
+  padding-right: 10px;
+  border-radius: 6px;
+}
+
+.btn-container-login {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+}
+
+.login-button {
+  display: flex;
+  /* font-style: "DM Sans", sans-serif; */
+  font-family: "DM Sans", sans-serif;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+  text-decoration: none;
+  height: 2rem;
+  width: 5.2rem;
+  /* margin-top: 50px; */
+  width: 30%;
+  background-color: #096553d3;
+  color: #e8e7f0;
+  /* padding: 15px 0; */
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 17.5rem;
+  /* margin-right: 2.2rem; */
+}
+
+.login-button:hover {
+  background-color: #0c4237d3;
+  transition: all 0.3s;
+}

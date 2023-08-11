@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Noto+Serif&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+  <header class="header">
+    <section class="navigation-container">
+      <nav class="nav-bar">
+        <img src="img/codemarker4.png" alt="" class="nav-logo-image">
+
+
+        <span class="dropdown">
+          <button class="dropbtn">Dashboard</button>
+
+          </div>
+        </span>
+
+        <span class="dropdown">
+          <button class="dropbtn">Test Management</button>
+          <div class="dropdown-content">
+            <div><a href="create-technology.html" class="create-technology-button">Create Technology</a></div>
+            <div><a href="" class="list-technology-button">List Technology</a></div>
+            <div><a href="create-test.html" class="create-test-button">Create Test</a></div>
+            <div><a href="" class="list-test-button">List Test</a></div>
+
+          </div>
+        </span>
+        <span class="dropdown">
+          <button class="dropbtn">User Management</button>
+          <div class="dropdown-content">
+            <div>Create User</div>
+            <div>List User</div>
+            <div>Update User</div>
+          </div>
+        </span>
+
+        <span class="dropdown">
+          <button class="dropbtn">Reports</button>
+          <div class="dropdown-content">
+            <div>Create Report</div>
+            <div>Update Reports</div>
+            <div>Reports List</div>
+          </div>
+        </span>
+
+        <img src="img/customers/customer-4.jpg" alt="" class="user-image" onclick="toggleMenu()" />
+        <div class="user-menu-wrap" id="subMenu">
+          <div class="user-sub-menu">
+            <div class="user-info">
+              <img src="img/customers/customer-3.jpg" alt="" />
+              <h3>Jhon Paterik</h3>
+            </div>
+            <hr />
+
+            <a href="#" class="sub-menu-link">
+              <img src="img/logos/profile.png" alt="" />
+              <p>Edit Profile</p>
+              <span></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="img/logos/setting.png" alt="" />
+              <p>Settings</p>
+              <span></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="img/logos/logout.png" alt="" />
+              <p>Logout</p>
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </header>
+  <script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu() {
+      subMenu.classList.toggle("open-menu");
+    }
+  </script>
+  <section class="trainer-dashboard">
+    <div class="trainer-dashboard-container">
+      <div class="dashboard-container-box">
+        <div class="credit-usage">
+          <span>Credit Usage</span>
+          <img src="img/graph.jpeg" alt="" class="credit-usage-img" />
+        </div>
+      </div>
+
+      <div class="dashboard-container-box">
+        <div class="test-candidates">
+          <span>Test & Candidates</span>
+          <img src="img/bar.jpeg" alt="" />
+        </div>
+      </div>
+
+      <div class="dashboard-container-box">
+        <div class="schedule-test">
+          <span>Today's Schedule Test</span>
+
+          <table>
+            <tr>
+              <th>Test Date</th>
+              <th>Number of Test</th>
+              <th>Test Status</th>
+            </tr>
+            <tr>
+              <td>02/10/2022</td>
+              <td>2</td>
+              <td>Completed</td>
+            </tr>
+            <tr>
+              <td>03/10/2022</td>
+              <td>4</td>
+              <td>In-Progress</td>
+            </tr>
+            <tr>
+              <td>13/10/2022</td>
+              <td>7</td>
+              <td>Completed</td>
+            </tr>
+            <tr>
+              <td>03/10/2022</td>
+              <td>4</td>
+              <td>Completed</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="dashboard-container-box">
+        <div class="test-performers">
+          <span>Top Performers</span>
+
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Test</th>
+              <th>Percent</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Java</td>
+              <td>70</td>
+            </tr>
+            <tr>
+              <td>Centro comercial</td>
+              <td>Python</td>
+              <td>60</td>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>PHP</td>
+              <td>79</td>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>C++</td>
+              <td>87</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="dashboard-container-box">
+        <div class="short-listed">
+          <span>Shortlisted</span>
+
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Batch</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>alffur@gmail.com</td>
+              <td>Jan-22</td>
+            </tr>
+            <tr>
+              <td>Centro comercial</td>
+              <td>centrocom@gmail.com</td>
+              <td>April-22</td>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>alffut@gmail.com</td>
+              <td>Mar-22</td>
+            </tr>
+            <tr>
+              <td>John Mac</td>
+              <td>mac@gmail.com</td>
+              <td>Feb-22</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

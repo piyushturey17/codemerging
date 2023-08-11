@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Noto+Serif&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <section class="navigation-container">
+      <nav class="nav-bar">
+        <img src="img/codemarker4.png" alt="" class="nav-logo-image">
+
+
+        <span class="dropdown">
+          <button class="dropbtn">Dashboard</button>
+
+          </div>
+        </span>
+
+        <span class="dropdown">
+          <button class="dropbtn">Test Management</button>
+          <div class="dropdown-content">
+            <div><a href="" class="create-technology-button">Create Technology</a></div>
+            <div><a href="" class="list-technology-button">List Technology</a></div>
+            <div><a href="" class="create-test-button">Create Test</a></div>
+            <div><a href="" class="list-test-button">List Test</a></div>
+
+          </div>
+        </span>
+        <span class="dropdown">
+          <button class="dropbtn">User Management</button>
+          <div class="dropdown-content">
+            <div>Create User</div>
+            <div>List User</div>
+            <div>Update User</div>
+          </div>
+        </span>
+
+        <span class="dropdown">
+          <button class="dropbtn">Reports</button>
+          <div class="dropdown-content">
+            <div>Create Report</div>
+            <div>Update Reports</div>
+            <div>Reports List</div>
+          </div>
+        </span>
+
+        <img src="img/customers/customer-4.jpg" alt="" class="user-image" onclick="toggleMenu()" />
+        <div class="user-menu-wrap" id="subMenu">
+          <div class="user-sub-menu">
+            <div class="user-info">
+              <img src="img/customers/customer-3.jpg" alt="" />
+              <h3>Jhon Paterik</h3>
+            </div>
+            <hr />
+
+            <a href="#" class="sub-menu-link">
+              <img src="img/logos/profile.png" alt="" />
+              <p>Edit Profile</p>
+              <span></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="img/logos/setting.png" alt="" />
+              <p>Settings</p>
+              <span></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="img/logos/logout.png" alt="" />
+              <p>Logout</p>
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </header>
+  <script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu() {
+      subMenu.classList.toggle("open-menu");
+    }
+  </script>
+  <div class="task-conatiner">
+    <!---------------------Test section---------------------------->
+
+
+    <section class="section-task">
+      <h1 class="heading-test">Create Test</h1>
+      <div class="task">
+        <div class="dropdown">
+          <button class="dropbtnt">Type</button>
+          <div class="dropdown-content">
+            <a href="#">Easy</a>
+            <a href="#">Medium</a>
+            <a href="#">Hard</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtnt">Technology</button>
+          <div class="dropdown-content">
+            <a href="#">Java</a>
+            <a href="#">Python</a>
+            <a href="#">C++</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!---------------------Text box section------------------------------->
+
+
+    <section class="chat-section">
+      <div class="chat-container">
+        <h2 class="test-heading">Test Name</h2>
+        <div class="chat-box">
+          <input placeholder="Test name.." name="msg" required></input>
+        </div>
+      </div>
+    </section>
+
+
+    <!------------------description section----------------------->
+
+
+    <section class="type-box">
+      <div class="container">
+        <div class="textarea-description">
+          <h2>Description</h2>
+          <textarea id="textarea1" rows="6" cols="8" placeholder="Type here..."></textarea>
+        </div>
+        <div class="textarea-instruction">
+          <h2>Instruction</h2>
+          <textarea id="textarea2" rows="6" cols="8" placeholder="Type here...."></textarea>
+        </div>
+      </div>
+
+
+      <!------------------Save and next section----------------------->
+
+
+      <button class="save-next-button">Save and Next</button>
+    </section>
+  </div>
+  </div>
+
+
+</body>
+
+</html>
